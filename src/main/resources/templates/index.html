@@ -25,7 +25,7 @@
         <main role="main" class="container">
             <div class="search-container">
 		        <form method="POST" action="">
-		            <input class="place" type="text" placeholder="Inserisci luogo da ricercare">
+		            <input class="place" type="text" placeholder="Cerca per provincia, CAP o città...">
 		            <input id="search-place" type="button" value="Cerca">
 		        </form>
             </div>
@@ -53,6 +53,8 @@
 			tileSize: 512,
 			zoomOffset: -1
 			}).addTo(mymap);
+			
+			L.marker([45.554753, 9.194645]).addTo(mymap).bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 		</script>			
 		<script>	
 	        $(document).ready(function(){
@@ -65,17 +67,21 @@
 	                	$('#search-result').html('');
 	                }
 	                
-	                var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=5&countrycodes=IT&dedupe=1&city='.concat(keyword);
+	                var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=5&countrycodes=IT&dedupe=1&q='.concat(keyword);
 	                console.log('cerco: '.concat(url));
-	                $.getJSON (url,function (data){
-	                    var locations = [];
-	                    $.each(data, function(key, val) {
-	                        console.log (val);
-	                        locations.push ('<li>'.concat(val.display_name).concat('</li>'));
-	                    });
-	                    $('#search-result').html('<ul>'.concat(locations).concat('</ul>'));
-	                });
-	            });
+	                $.getJSON (url)
+	                	.done (function (data){
+	                    	var locations = [];
+	                    	$.each(data, function(key, val) {
+	                        	console.log (val);
+	                        	locations.push ('<div class="suggest">'.concat(val.display_name).concat('</div>'));
+	                    	});
+	                    	$('#search-result').html(locations);
+	                	})
+	                	.always(function () { 
+	                		console.log('always.... blah, blah, blah ...') 
+	                	}); 
+					});
 	        });			
 			
 		</script>
