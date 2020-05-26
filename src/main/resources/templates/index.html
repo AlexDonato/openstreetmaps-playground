@@ -55,6 +55,23 @@
 			}).addTo(mymap);
 			
 			L.marker([45.554753, 9.194645]).addTo(mymap).bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+
+
+            mymap.on("moveend", function () {
+                var center = mymap.getCenter();
+                var bounds = mymap.getBounds();
+                var ne_b = bounds._northEast;
+                var sw_b = bounds._southWest;
+                console.log("moved, center is ",center, ", boundaries ",bounds);
+
+                $.get("/mock/stores.json?lat="+center.lat+"&lng="+center.lng+"&ne_b="+ne_b.lat+"&ne_b="+ne_b.lng+"&sw_b="+sw_b.lat+"&sw_b="+sw_b.lng).done(function(res){
+                    for(var i = 0, x = res.length; i<x;i++){
+                        var c=res[i];
+                        L.marker([c.lat, c.lng]).addTo(mymap)
+                    }
+                })
+
+            });
 		</script>			
 		<script>	
 	        $(document).ready(function(){
@@ -67,11 +84,15 @@
 	                	$('#search-result').html('');
 	                }
 	                
-	                var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=5&countrycodes=IT&dedupe=1&q='.concat(keyword);
+	                var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=5&countrycodes=IT&dedupe=1&city'.concat(keyword);
 	                console.log('cerco: '.concat(url));
 	                $.getJSON (url)
 	                	.done (function (data){
 	                    	var locations = [];
+                            if(data){
+                                var c=data[0];
+                                mymap.flyTo([c.lat, c.lon],13)
+                            }
 	                    	$.each(data, function(key, val) {
 	                        	console.log (val);
 	                        	locations.push ('<div class="suggest">'.concat(val.display_name).concat('</div>'));
@@ -82,7 +103,8 @@
 	                		console.log('always.... blah, blah, blah ...') 
 	                	}); 
 					});
-	        });			
+	        });
+
 			
 		</script>
     </body>
