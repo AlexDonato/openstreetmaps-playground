@@ -1,0 +1,354 @@
+
+[
+
+  {
+    "id" : "0",
+    "iclcode": "507",
+    "code": "507",
+    "region" : "",
+    "city" : "Milano",
+    "cap" : "20121",
+    "type" : "lfLibrerie",
+    "titleShop" : "RED",
+    "email" : "red-milano.brera@afsf.it",
+    "address" : "Corso Garibaldi 1",
+    "phone" : "02.35923684",
+    "fax" : "0237908097",
+    "schedule" : "<p><em>Lunedì - Giovedì</em>: 07:30 - 23:00 <br><em>Venerdì</em>: 07:30 - 00:00 <br><em>Sabato</em>: 10:00 - 00:00 <br><em>Domenica</em>: 10:00 - 23:00</p>",
+    "extraordinaryOpenings" : "",
+    "extraordinaryClosings" : "23/05/2020, 24/05/2020, 25/05/2020, 26/05/2020, 27/05/2020, 28/05/2020, 29/05/2020, 30/05/2020, 31/05/2020",
+    "lat" : "45.476729",
+    "lng" : "9.1841",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/Milano/RED-Milano-Brera.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "1",
+    "iclcode": "508",
+    "code": "508",
+    "region" : "",
+    "city" : "Milano",
+    "cap" : "20145",
+    "type" : "lfLibrerie",
+    "titleShop" : "RED",
+    "email" : "red-milano.citylife@afsf.it",
+    "address" : "Via Largo Domodossola 1/a",
+    "phone" : "02.4986472",
+    "fax" : "",
+    "schedule" : "<p><em>Lunedì - Domenica</em>: 08:00 - 23:00</p>",
+    "extraordinaryOpenings" : "30/11/2017",
+    "extraordinaryClosings" : "",
+    "lat" : "45.480074",
+    "lng" : "9.159728",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/Milano/RED-Milano-CityLife.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "2",
+    "iclcode": "509",
+    "code": "509",
+    "region" : "",
+    "city" : "Milano",
+    "cap" : "20135",
+    "type" : "lfLibrerie",
+    "titleShop" : "RED",
+    "email" : "red.milano-sabotino@afsf.it",
+    "address" : "Viale Sabotino, 28",
+    "phone" : "02.49752655",
+    "fax" : "0285715950",
+    "schedule" : "<p><em>Lunedì - Domenica</em>: 08:00 - 19:00</p>",
+    "extraordinaryOpenings" : "",
+    "extraordinaryClosings" : "",
+    "lat" : "45.451008",
+    "lng" : "9.20212",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/Milano/RED-Milano-Sabotino.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "3",
+    "iclcode": "808",
+    "code": "808",
+    "region" : "",
+    "city" : "Milano",
+    "cap" : "20124",
+    "type" : "lfExpress",
+    "titleShop" : "laFeltrinelli Express",
+    "email" : "Amministrazione.Milano-Centrale@lafeltrinelli.it",
+    "address" : "Piazza IV Novembre",
+    "phone" : "02.91947777",
+    "fax" : "",
+    "schedule" : "<p><em>Lunedì - Venerdì</em>: 07:00 - 22:00 <br><em>Sabato - Domenica</em>: 08:00 - 21:00</p>",
+    "extraordinaryOpenings" : "",
+    "extraordinaryClosings" : "",
+    "lat" : "45.48607",
+    "lng" : "9.2035",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/Milano/LS---Milano-Centrale.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "4",
+    "iclcode": "54",
+    "code": "54",
+    "region" : "Lombardia",
+    "city" : "Milano",
+    "cap" : "20135",
+    "type" : "lfLibrerie",
+    "titleShop" : "laFeltrinelli Librerie",
+    "email" : "milano-22marzo@lafeltrinelli.it",
+    "address" : "Corso 22 Marzo ,4",
+    "phone" : "02.91947777",
+    "fax" : "",
+    "schedule" : "<p><em>Lunedì - Sabato</em>: 09:30 - 20:00 <br><em>Domenica</em>: 10:00 - 13:30 / 16:00 - 19:30</p>",
+    "extraordinaryOpenings" : "01/11/2019, 07/12/2019, 08/12/2019, 24/12/2019, 31/12/2019",
+    "extraordinaryClosings" : "25/12/2019, 26/12/2019",
+    "lat" : "45.462223",
+    "lng" : "9.208388",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/lombardia/la-Feltrinelli-Librerie-Milano-XXIIMarzo.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "5",
+    "iclcode": "56",
+    "code": "56",
+    "region" : "",
+    "city" : "Milano",
+    "cap" : "20154",
+    "type" : "lfLibrerie",
+    "titleShop" : "laFeltrinelli Librerie",
+    "email" : "Milano-Pasubio@lafeltrinelli.it",
+    "address" : "Viale Pasubio, 11",
+    "phone" : "02.91947777",
+    "fax" : "02 29000701",
+    "schedule" : "<p><em>Lunedì - Sabato</em>: 10:00 - 20:00 <br><em>Domenica</em>: 10:00 - 19:00</p>",
+    "extraordinaryOpenings" : "01/11/2017, 07/12/2017, 08/12/2017, 24/12/2017, 31/12/2017, 06/01/2018, 29/02/2020, 09/03/2020, 16/03/2020, 27/07/2020, 01/08/2020, 03/08/2020, 08/08/2020, 17/08/2020, 22/08/2020",
+    "extraordinaryClosings" : "06/08/2017, 13/08/2017, 14/08/2017, 15/08/2017, 16/08/2017, 17/08/2017, 18/08/2017, 19/08/2017, 20/08/2017, 27/08/2017, 25/12/2017, 26/12/2017, 01/01/2018, 25/12/2018, 26/12/2018, 01/01/2019, 12/08/2019, 13/08/2019, 14/08/2019, 15/08/2019, 16/08/2019, 17/08/2019, 18/08/2019, 08/03/2020, 14/03/2020, 15/03/2020, 21/03/2020, 22/03/2020, 28/03/2020, 29/03/2020, 02/08/2020, 09/08/2020, 23/08/2020, 25/12/2020, 26/12/2020, 01/01/2021",
+    "lat" : "45.481559",
+    "lng" : "9.184409",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/Milano/LF-Milano-Pasubio.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "6",
+    "iclcode": "502",
+    "code": "502",
+    "region" : "Lombardia",
+    "city" : "Milano",
+    "cap" : "20154",
+    "type" : "lfLibrerie",
+    "titleShop" : "RED",
+    "email" : "red-milano.portanuova@afsf.it",
+    "address" : "P.zza Gae Aulenti 1",
+    "phone" : "02.91947777",
+    "fax" : "02 29062723",
+    "schedule" : "<p><em>Lunedì - Giovedì</em>: 10:00 - 20:00 <br><em>Venerdì - Domenica</em>: 10:00 - 21:00</p>",
+    "extraordinaryOpenings" : "",
+    "extraordinaryClosings" : "",
+    "lat" : "45.485335",
+    "lng" : "9.188025",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/lombardia/la-Feltrinelli-Red.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "7",
+    "iclcode": "551",
+    "code": "551",
+    "region" : "Lombardia",
+    "city" : "Milano",
+    "cap" : "20100",
+    "type" : "lfLibrerie",
+    "titleShop" : "laFeltrinelli Libri e Musica",
+    "email" : "",
+    "address" : "piazza Piemonte, 2/4",
+    "phone" : "02.91947777",
+    "fax" : "02 43354250",
+    "schedule" : "<p><em>Lunedì - Domenica</em>: 10:00 - 19:30</p>",
+    "extraordinaryOpenings" : "",
+    "extraordinaryClosings" : "25/12/2019, 26/12/2019, 01/01/2020, 08/03/2020, 14/03/2020, 15/03/2020, 21/03/2020, 22/03/2020, 28/03/2020, 29/03/2020",
+    "lat" : "45.4669046",
+    "lng" : "9.1560534",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/lombardia/Libri-e-Musica-Milano-Piemonte.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "8",
+    "iclcode": "552",
+    "code": "552",
+    "region" : "Lombardia",
+    "city" : "Milano",
+    "cap" : "20124",
+    "type" : "lfLibrerie",
+    "titleShop" : "laFeltrinelli Libri e Musica",
+    "email" : "",
+    "address" : "corso Buenos Aires, 33",
+    "phone" : "02.91947777",
+    "fax" : "02 20233651",
+    "schedule" : "<p><em>Lunedì - Sabato</em>: 09:30 - 20:00 <br><em>Domenica</em>: 10:00 - 20:00</p>",
+    "extraordinaryOpenings" : "06/01/2020, 13/04/2020, 25/04/2020, 02/06/2020, 16/08/2020, 07/12/2020",
+    "extraordinaryClosings" : "15/08/2019, 25/12/2019, 26/12/2019, 01/01/2020, 14/03/2020, 15/03/2020, 21/03/2020, 22/03/2020, 28/03/2020, 29/03/2020, 12/04/2020, 01/05/2020, 15/08/2020",
+    "lat" : "45.4794046",
+    "lng" : "9.2097448",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/lombardia/la-Feltrinelli-Libri-e-Musica-Milano-Baires.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "9",
+    "iclcode": "775",
+    "code": "775",
+    "region" : "Lombardia",
+    "city" : "Milano",
+    "cap" : "20149",
+    "type" : "lfExpress",
+    "titleShop" : "laFeltrinelli Village",
+    "email" : "milano-portello@lafeltrinelli.it",
+    "address" : "Via Traiano, 79 c/o Iper Portello",
+    "phone" : "02.91947777",
+    "fax" : "023927153",
+    "schedule" : "<p><em>Lunedì - Domenica</em>: 09:00 - 20:00</p>",
+    "extraordinaryOpenings" : "06/01/2017, 25/04/2017, 01/05/2017, 02/06/2017, 15/08/2017, 01/11/2017, 07/12/2017, 08/12/2017, 06/01/2018, 02/04/2018, 25/04/2018, 01/05/2018, 02/06/2018, 15/08/2018, 01/11/2018, 07/12/2018, 08/12/2018, 02/06/2020",
+    "extraordinaryClosings" : "01/01/2017, 25/12/2017, 26/12/2017, 01/01/2018, 01/04/2018, 25/12/2018, 26/12/2018",
+    "lat" : "45.4731689",
+    "lng" : "9.1487328",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/lombardia/la-Feltrinelli-Village-Milano.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "10",
+    "iclcode": "801",
+    "code": "801",
+    "region" : "Lombardia",
+    "city" : "Milano",
+    "cap" : "20154",
+    "type" : "lfExpress",
+    "titleShop" : "laFeltrinelli Express",
+    "email" : "",
+    "address" : "P.zza Freud snc",
+    "phone" : "02.91947777",
+    "fax" : "02 29060968",
+    "schedule" : "<p><em>Lunedì - Venerdì</em>: 08:00 - 19:00 <br><em>Sabato</em>: 10:00 - 19:00</p>",
+    "extraordinaryOpenings" : "",
+    "extraordinaryClosings" : "",
+    "lat" : "45.485225",
+    "lng" : "9.1759123",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/lombardia/la-Feltrinelli-Express-Milano.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "11",
+    "iclcode": "808",
+    "code": "808",
+    "region" : "Lombardia",
+    "city" : "Milano",
+    "cap" : "20124",
+    "type" : "lfExpress",
+    "titleShop" : "laFeltrinelli Express",
+    "email" : "Amministrazione.Milano-Centrale@lafeltrinelli.it",
+    "address" : "Piazza IV Novembre",
+    "phone" : "02.91947777",
+    "fax" : "",
+    "schedule" : "<p><em>Lunedì - Sabato</em>: 07:00 - 19:00 <br><em>Domenica</em>: 10:00 - 19:00</p>",
+    "extraordinaryOpenings" : "",
+    "extraordinaryClosings" : "",
+    "lat" : "45.48607",
+    "lng" : "9.2035",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/lombardia/la-Feltrinelli-Express-Milano-Centrale.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "12",
+    "iclcode": "572",
+    "code": "572",
+    "region" : "",
+    "city" : "Milano",
+    "cap" : "20121",
+    "type" : "lfLibrerie",
+    "titleShop" : "laFeltrinelli Libri e Musica",
+    "email" : "Amministrazione.Milano-Duomo@lafeltrinelli.it",
+    "address" : "P.za Duomo - Via U.Foscolo 1/3",
+    "phone" : "02.91947777",
+    "fax" : "02.85715950",
+    "schedule" : "<p><em>Lunedì - Domenica</em>: 10:00 - 14:00 / 15:00 - 19:00</p>",
+    "extraordinaryOpenings" : "",
+    "extraordinaryClosings" : "",
+    "lat" : "45.464679",
+    "lng" : "9.19077",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/lombardia/la-Feltrinelli-Librerie-Milano-Duomo.html",
+    "events" : [
+
+    ]
+
+  },
+
+  {
+    "id" : "13",
+    "iclcode": "760",
+    "code": "760",
+    "region" : "Lombardia",
+    "city" : "Novate Milanese",
+    "cap" : "20026",
+    "type" : "lfExpress",
+    "titleShop" : "laFeltrinelli Village",
+    "email" : "",
+    "address" : "via Amoretti, ang. Via Bovisasca",
+    "phone" : "02.91947777",
+    "fax" : "02 39005141",
+    "schedule" : "<p><em>Lunedì - Sabato</em>: 09:30 - 14:00 / 15:00 - 20:00 <br><em>Domenica</em>: 09:30 - 14:00 / 15:00 - 19:00</p>",
+    "extraordinaryOpenings" : "02/06/2020, 16/08/2020, 01/11/2020",
+    "extraordinaryClosings" : "15/08/2020",
+    "lat" : "45.5254688",
+    "lng" : "9.1489464",
+    "link" : "/fcom/it/home/pages/puntivendita/negozi/trova/lombardia/la-Feltrinelli-Village-Novate-Milanese.html",
+    "events" : [
+
+    ]
+
+  }
+
+]
