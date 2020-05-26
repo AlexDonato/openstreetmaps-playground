@@ -84,18 +84,24 @@
 	                	$('#search-result').html('');
 	                }
 	                
-	                var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=5&countrycodes=IT&dedupe=1&city'.concat(keyword);
+	                var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=5&countrycodes=IT&accept-language=it-IT&dedupe=1&addressdetails=1&q='.concat(keyword);
 	                console.log('cerco: '.concat(url));
 	                $.getJSON (url)
 	                	.done (function (data){
 	                    	var locations = [];
-                            if(data){
+                            if(data && data.length>0){
                                 var c=data[0];
                                 mymap.flyTo([c.lat, c.lon],13)
                             }
 	                    	$.each(data, function(key, val) {
 	                        	console.log (val);
-	                        	locations.push ('<div class="suggest">'.concat(val.display_name).concat('</div>'));
+	                        	locations.push ('<div class="suggest" id="'+key+'" data-lat="'+val.lat+'" data-lon="'+val.lon+'">&#128204;'.concat(val.display_name).concat('</div>'));
+                                $(document).on('click','div#'+key,function () {
+                                    var lat=$(this).data('lat');
+                                    var lon=$(this).data('lon');
+                                    mymap.flyTo([lat,lon],13)
+                                })
+
 	                    	});
 	                    	$('#search-result').html(locations);
 	                	})
