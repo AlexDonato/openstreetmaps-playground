@@ -107,7 +107,7 @@
                             }
 	                    	$.each(data, function(key, val) {
 	                        	console.log (val);
-	                        	locations.push ('<div class="suggest" id="'+key+'" data-lat="'+val.lat+'" data-lon="'+val.lon+'">&#128204;'.concat(val.display_name).concat('</div>'));
+	                        	locations.push ('<div class="suggest" id="'+key+'" style="cursor: pointer" data-lat="'+val.lat+'" data-lon="'+val.lon+'">&#128204;'.concat(val.display_name).concat('</div>'));
                                 $(document).on('click','div#'+key,function () {
                                     var lat=$(this).data('lat');
                                     var lon=$(this).data('lon');
