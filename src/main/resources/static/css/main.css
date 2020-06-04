@@ -33,3 +33,6 @@
 .show {
 	display: block;
 }
+.search-message {
+	color: red;
+}

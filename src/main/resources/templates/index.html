@@ -35,6 +35,7 @@
 			  </div>
 			</div>
             
+            <div class="search-message"></div>
             
             <div id="map-container">
 				OSM - LeaftletJS - Nominatim
@@ -101,6 +102,9 @@
 	            $(".place").keyup(function(){
 	                var keyword = $(".place").val();
 	                
+            		$('.search-message').html('');
+            		$('.search-message').toggleClass('show');
+	                
 	                console.log('inserito: '.concat($(".place").val()));
 	                
 	                if (keyword.length < 3) {
@@ -132,9 +136,12 @@
 	                		console.log('always....') 
 	                	}); 
 					});
-	            $("#search-form").on('click', function(){
+	            $("#search-place").on('click', function(){
 	                var keyword = $(".place").val();
 	                $('#myDropdown').removeClass("show");
+            		$('.search-message').html('');
+            		$('.search-message').toggleClass('show');
+
 	                console.log('cerca: '.concat($(".place").val()));
 	                
 	                var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=5&countrycodes=IT&accept-language=it-IT&dedupe=1&addressdetails=1&q='.concat(keyword);
@@ -148,6 +155,11 @@
                                 mymap.flyTo([val.lat,val.lon],13);
 
 	                    	});
+	                    	if (!data || data.length == 0) {
+	                    		$('.search-message').html('Nessun risultato ...');
+	                    		$('.search-message').toggleClass('show');
+	                    	}
+	                    		
 	                	})
 	                	.always(function () { 
 	                		console.log('always....') 
