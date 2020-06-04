@@ -18,17 +18,23 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">Open Street Maps</a>
+        <nav class="navbar navbar-expand-md navbar-feltri-brand fixed-top">
+            <a class="navbar-feltri-brand" href="#">OSM - LeaftletJS - Nominatim</a>
         </nav>
 
         <main role="main" class="container">
             <div class="search-container">
-		        <form method="POST" action="">
+		        <form id="search-form" method="POST" action="">
 		            <input class="place" type="text" placeholder="Cerca per provincia, CAP o città...">
-		            <input id="search-place" type="button" value="Cerca">
+		            <button id="search-place" type="button">Cerca</button>
 		        </form>
             </div>
+            
+			<div class="dropdown">
+			  <div id="myDropdown" class="dropdown-content">
+			  </div>
+			</div>
+            
             
             <div id="map-container">
 				OSM - LeaftletJS - Nominatim
@@ -42,6 +48,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script>
+                	
 			var mymap = L.map('map-container').setView([45.463692, 9.190490], 13);
 
 			L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -87,13 +94,18 @@
 		</script>			
 		<script>	
 	        $(document).ready(function(){
+	        	
+	        	$( "#search-form" ).submit(function( event ) {
+	        		  event.preventDefault();
+	        		});
 	            $(".place").keyup(function(){
 	                var keyword = $(".place").val();
 	                
 	                console.log('inserito: '.concat($(".place").val()));
 	                
-	                if (keyword.length < 5) {
+	                if (keyword.length < 3) {
 	                	$('#search-result').html('');
+	                	return;
 	                }
 	                
 	                var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=5&countrycodes=IT&accept-language=it-IT&dedupe=1&addressdetails=1&q='.concat(keyword);
@@ -101,24 +113,44 @@
 	                $.getJSON (url)
 	                	.done (function (data){
 	                    	var locations = [];
-                            if(data && data.length>0){
-                                var c=data[0];
-                                mymap.flyTo([c.lat, c.lon],13)
-                            }
 	                    	$.each(data, function(key, val) {
 	                        	console.log (val);
 	                        	locations.push ('<div class="suggest" id="'+key+'" style="cursor: pointer" data-lat="'+val.lat+'" data-lon="'+val.lon+'">&#128204;'.concat(val.display_name).concat('</div>'));
-                                $(document).on('click','div#'+key,function () {
+                                $(document).on('click','div#' + key,function () {
                                     var lat=$(this).data('lat');
                                     var lon=$(this).data('lon');
-                                    mymap.flyTo([lat,lon],13)
+                                    $('.place').val(val.display_name);
+                                    mymap.flyTo([lat,lon],13);
+                                    $('#myDropdown').toggleClass("show");
                                 })
 
 	                    	});
-	                    	$('#search-result').html(locations);
+	                    	$('#myDropdown').html(locations);
+	                    	$('#myDropdown').toggleClass("show");
 	                	})
 	                	.always(function () { 
-	                		console.log('always.... blah, blah, blah ...') 
+	                		console.log('always....') 
+	                	}); 
+					});
+	            $("#search-form").on('click', function(){
+	                var keyword = $(".place").val();
+	                $('#myDropdown').removeClass("show");
+	                console.log('cerca: '.concat($(".place").val()));
+	                
+	                var url = 'https://nominatim.openstreetmap.org/search?format=json&limit=5&countrycodes=IT&accept-language=it-IT&dedupe=1&addressdetails=1&q='.concat(keyword);
+	                console.log('cerco: '.concat(url));
+	                $.getJSON (url)
+	                	.done (function (data){
+	                    	var locations = [];
+	                    	$.each(data, function(key, val) {
+	                        	console.log (val);
+	                        	locations.push ('<div class="suggest" id="'+key+'" style="cursor: pointer" data-lat="'+val.lat+'" data-lon="'+val.lon+'">&#128205;'.concat(val.display_name).concat('</div>'));
+                                mymap.flyTo([val.lat,val.lon],13);
+
+	                    	});
+	                	})
+	                	.always(function () { 
+	                		console.log('always....') 
 	                	}); 
 					});
 	        });
